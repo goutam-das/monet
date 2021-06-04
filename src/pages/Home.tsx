@@ -6,6 +6,8 @@ import { Main, Root } from "../styles";
 import TokenDisplay from "./componenets/TokenDisplay";
 import InvoiceForm from "./componenets/InvoiceForm";
 import InvoiceTable from "./componenets/InvoiceTable";
+import ApproveOrReject from "./componenets/ApproveOrReject";
+
 const Home: FC = () => {
   return (
     <Root>
@@ -16,6 +18,7 @@ const Home: FC = () => {
         <TokenDisplay />
         <InvoiceForm />
         <InvoiceTable />
+        <ApproveOrReject />
       </Main>
     </Root>
   );
