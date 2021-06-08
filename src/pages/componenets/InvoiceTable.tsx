@@ -91,8 +91,8 @@ const TableData = styled.div`
   font-size: 12px;
   color: gray;
   border: 1px solid grey;
-  border-radius: 15px;
-  padding: 10px;
+  border-radius: 30px;
+  padding: 15px 10px;
   & > div {
     text-align: center;
   }
