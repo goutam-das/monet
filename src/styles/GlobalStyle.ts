@@ -79,6 +79,12 @@ export default createGlobalStyle`
     width: 100%;
   }
 
+  fieldset.MuiOutlinedInput-notchedOutline {
+    border-color: var(--base-color);
+    border-radius: 12px;
+    width: 100%;
+  }
+
   label.MuiInputLabel-formControl {
     font-weight: 600;
     letter-spacing: 0.4px;

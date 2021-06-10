@@ -14,6 +14,16 @@ import {
   Typography,
   withStyles,
 } from "@material-ui/core";
+import TextField from "@material-ui/core/TextField";
+import Autocomplete from "@material-ui/lab/Autocomplete";
+
+const emails = [
+  "example1@gmail.com",
+  "example2@gmail.com",
+  "example3@gmail.com",
+  "example4@gmail.com",
+  "example5@gmail.com",
+];
 
 const InvoiceForm: FC = () => {
   return (
@@ -25,10 +35,24 @@ const InvoiceForm: FC = () => {
         <Grid container spacing={2}>
           <Grid item xs={4}>
             <FormControl>
-              <InputLabel shrink htmlFor="bootstrap-input">
+              <InputLabel
+                shrink
+                htmlFor="bootstrap-input"
+                style={{ position: "relative", marginBottom: 10 }}
+              >
                 *Email
               </InputLabel>
-              <BootstrapInput placeholder="Select a contact" />
+              <Autocomplete
+                options={emails}
+                renderInput={(params) => (
+                  <TextField
+                    {...params}
+                    variant="outlined"
+                    size="small"
+                    placeholder="Select a contact"
+                  />
+                )}
+              />
             </FormControl>
           </Grid>
           <Grid item xs={4}>
